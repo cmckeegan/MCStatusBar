@@ -40,7 +40,7 @@ namespace MagicClaw {
         private static MCStatusBar sharedView;
         private static MCStatusBar SharedView {
             get {
-                return sharedView = sharedView ?? new MCStatusBar(UIScreen.MainScreen.Bounds);
+                return sharedView ?? (sharedView = new MCStatusBar(UIScreen.MainScreen.Bounds));
             }
         }
 
